@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<div class="w3-container w3-red">
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <!-- <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a> -->
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top w3-red">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">Mail</div>
+    <div class="w3-center w3-padding-16">My Food</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding w3-red" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <a href="chocolate.html"><div class="w3-quarter">
+      <img src="mango.jpg" style="width:100%; height: 200px;" class="w3-hover-sepia">
+      <div class="w3-second w3-display-position">
+      <h3>Chocolate Cake</h3>
+      <p>Price<span><button class="w3-button  w3-green">Order now</button></span></p>
+      <!-- <button class="w3-button w3-round-xlarge w3-green">Order now</button> -->
+    </div></a>
+
+    </div>
+    <a href="wed.html"><div class="w3-quarter">
+      <img src="ras.png" alt="Steak" style="width:100%; height:200px"  class="w3-hover-shadow">
+      <h3>Wedding Cake</h3>
+      <p>Price<span><button class="w3-button w3-green">Order now</button></span></p>
+      </div></a>
+    <a href="fruit.html"></a><div class="w3-quarter">
+      <img src="pexels-geovane-souza-15071190.jpg" style="width:100%;  height:200px;" class="w3-hover-sepia">
+      <h3>Fruit Cake</h3>
+      <p>Price<span><button class="w3-button  w3-green">Order now</button></span></p>
+      
+    </div></a>
+    <a href="birth.html"><div class="w3-quarter">
+      <img src="bir1.png" style="width:100%; height:200px" class="w3-hover-sepia">
+      <h3>Birthday Cake</h3>
+      <p>Price<span><button class="w3-button  w3-green">Order now</button></span></p>
+
+    </div></a>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food1">
+    <a href="cup.html"><div class="w3-quarter">
+      <img src="brooke-lark-pGM4sjt_BdQ-unsplashr.jpg" style="width:100%; height: 200px;" class="w3-hover-sepia">
+      <h3>Cup Cake</h3>
+      <p>Price<span><button class="w3-button  w3-green">Order now</button></span></p>
+      
+    </div></a>
+    <a href="lemon.html"><div class="w3-quarter">
+      <img src="https://www.pngkey.com/png/detail/494-4946918_california-lemon-cake-6-cake-cheesecake.png" alt="California Lemon Cake 6” Cake - Cheesecake@pngkey.com" style="width: 100%; height: 200px;" class="w3-hover-sepia" >
+     <h3>Lemon Cake</h3>
+      <p>Price <span><button class="w3-button w3-green">Order now</button></span></p>
+      
+    </div></a>
+    <a href="vanila.html"><div class="w3-quarter">
+      <img src="https://www.seekpng.com/png/detail/810-8107392_vanilla-cake-birthday-cake.png" alt="Vanilla Cake - Birthday Cake@seekpng.com" style="width:100%; height:200px;">
+     <h3>Vanila Cake</h3>
+      <p>Price<span><button class="w3-button  w3-green">Order now</button></span></p>
+      
+    </div></a>
+     <div class="w3-quarter">
+      <img src="https://www.seekpng.com/png/detail/810-8107392_vanilla-cake-birthday-cake.png.png" alt="Vanilla Cake - Birthday Cake@seekpng.com" style="width:100%; height:200px;">
+     <h3>Black Forest Cake</h3>
+      <p>Price<span><button class="w3-button  w3-green">Order now</button></span></p>
+      
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="menu.html" class="w3-bar-item w3-button w3-hover-black">2</a>
+     
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  <hr></hr>
+  
+ 
+  
+  <!-- Footer -->
+   <footer class="w3-row-padding w3-padding-32 w3-black">
+        <div class="w3-third" id="sd">
+             <h3>Work Tunings</h3>
+              <div id="para"></div>
+             <p>Our work timings are
+              <ul>
+              <li>Monday-Friday:8am-8pm</li>
+              <li>Saturday:9am-4pm</li>
+              <li>Sunday:closed</li>
+             </ul>
+
+             </p>
+             
+        </div>
+  
+   
+    
+       <!-- <div id="line"></div> -->
+       <div class="w3-third w3-serif <!-- w3-right -->" id="td">
+       <h3>Social Media</h3>
+        <p>
+
+           <i class="fa fa-facebook"></i>
+           <i class="fa fa-instagram"></i>
+           <i class="fa fa-twitter"></i>
+           <i class="fa fa-whatsapp"></i>
+       
+        </p>
+       </div> 
+    </footer>  
+
+<!-- End page content -->
+</div>
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
