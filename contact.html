@@ -10,6 +10,10 @@
 	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
 	<style>
 		@Media(max-width: 550px){
+			body{
+				font-size: 15px;
+			}
+
 			#start{
 				width: 550px;
 			}
@@ -17,13 +21,23 @@
 				margin: auto;
 			}
 			#tact{
-				width: 450px;
+				width: 400px;
 			}
 			#detail button{
 				transform: translate(280px,-70px);
 			}
 			#message{
 				transform: translate(220px,-150px);
+
+
+			}
+
+			#td{
+				transform: translate(25px);
+				font-size: 15px;
+			}
+			.bot{
+				height: 100px;
 			}
 
 		}
@@ -45,16 +59,16 @@
     	</div>
         <div id="detail">
     	    <p>Name<span>*</span></p>
-    	    <input type="text" name="" placeholder="Name">
+    	    <input type="text" name="" placeholder="Name" required>
     	    <p>Enter your Email Address<span>*</span></p>
-    	    <input type="Email" name="" placeholder="Email">
+    	    <input type="Email" name="" placeholder="Email" required>
     	    <p>Enter your Subject<span>*</span></p>
-    	    <input type="text" name="" placeholder="Subject">
+    	    <input type="text" name="" placeholder="Subject" required>
     	    <div id="message">
 
     	        <p>Enter Your Message<span>*</span></p>
     	        
-    	        <textarea placeholder="message"></textarea>
+    	        <textarea placeholder="message" required></textarea>
     	       
     	    </div>
     	     <button class="w3-button w3-black w3-hover-green w3-center">Submit</button>	    
