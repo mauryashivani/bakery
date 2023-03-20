@@ -3,35 +3,38 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Fruit cake</title>
+	<title>Chocolate cake</title>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<style>
-		.container{
+		#container{
+			height: 560px;
 			width: 450px;
 			border: 1px solid green;
 			margin: auto;
 		}
-		.container:hover{
-			cursor: pointer;
-			box-shadow: 0 5px 5px;
-		}
-		#fruit{
+		#txt{
 			background: lightgoldenrodyellow;
-
+			height: 115px;
+		}
+		h3,h4{
+			margin-left: 5px;
+		}
+		#container:hover{
+			box-shadow: 0px 5px 5px;
+			cursor: pointer;
 		}
 	</style>
 </head>
 <body>
-	<div class="container">
+	<div id="container">
 		
-			<img src="fru.jpg"style="width:450px; height: 400px; position: relative;">
+			<img src="umesh-soni-LDnmyOaA-ew-unsplash.jpg" style="width:450px; height: 400px;">
 			<hr>
-			<div id="fruit">
-			<h3 style="margin: 5px;">Fruit Cake</h3>
-			<h4 style="margin: 5px;">Price: 500</h4>
-			<img src="cart.png" style="height: 30px; width: 30px; transform: translate(300px,-15px);">
+		<div id="txt">	
+			<h3>Chocolate Cake</h3>
+			<h4>Price: 500</h4>
+			<img src="cart.png" style="width: 30px; height: 30px; transform: translate(300px,-15px);">
 			<button class="w3-button w3-green w3-right" style="transform: translate(-10px,-20px);">Buy Now</button>
-			
 		</div>
 	</div>
 

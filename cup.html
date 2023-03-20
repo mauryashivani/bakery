@@ -4,29 +4,44 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cup Cake</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<style>
 		.container{
 	              border: 2px solid green;
-	              width: 610px;
+	              width: 480px;
+	              margin: auto;
+	              height: 550px;
                   }
+        .container:hover{
+        	cursor: pointer;
+        	box-shadow: 0 5px 5px;
+        }          
 
         #wed{
-	        border: 1px red;
-	       height: 600px;
-	       width: 700px;
+	        background: lightgoldenrodyellow;
+	        height: 105px;
            }
+        h3,h4{
+        	margin-left: 5px;
+        }   
 
         #wed hr{
 	       width: 610px;
+	      
            }
 	</style>
 </head>
 <body>
 	<div class="container ">
+		
+			<img src="cup.jpg" style="width:475px; height:400px;">
+		<hr>
 		<div  id="wed" >
-			<img src="brooke-lark-pGM4sjt_BdQ-unsplash.jpg" style="width:610px; height: 500px;">
-		<hr></hr>
-		<h3>Cup Cake</h3>
+		<h3><b>Cup Cake</b></h3>
+		<h4>Price: 500</h4>
+		<img src="cart.png" style="width:30px; height:30px; transform: translate(320px,-15px);">	
+
+		<button class="w3-button w3-green w3-right" style="transform: translate(-10px,-25px);">Buy Now</button>
 
 		</div>
 		

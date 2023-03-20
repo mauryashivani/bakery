@@ -231,8 +231,8 @@ h4 {
 	/*color: darkgrey;*/
 }
 #bout{
-	height: 300px;
-	width: 300px;
+	height: 250px;
+	width: 200px;
 	border: 2px solid white;
 	transform: translate(30px,-800px);
 
@@ -243,16 +243,19 @@ h4 {
 
 .container{
 	border: 2px solid green;
-	width: 605px;
+	width: 500px;
+	margin: auto;
+}
+.container:hover{
+	cursor: pointer;
+	box-shadow: 0 5px 5px;
 }
 
 #wed{
-	border: 1px red;
-	height: 600px;
-	width: 700px;
+	background: lightgoldenrodyellow;
 }
 #wed hr{
-	width: 605px;
+	width: 600px;
 }
 
 /*menu*/
