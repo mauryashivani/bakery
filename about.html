@@ -10,10 +10,33 @@
 	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
 
 	<style>
-		*{
+		/**{
 			margin: 0;
 			padding: 0;
+		}*/
+
+
+		#bg{
+			height: 650px;
+			width: 100%;
+			/*object-fit: contain;*/
+			/*left: 50%;*/
+			left: 0;
+			position: absolute;
+			background-size: 100% 100%;
+            transform: translate(0, -650px);
+			animation-name: start;
+			animation: slider 10s infinite linear;
 		}
+
+		@keyframes slider{
+			0%{background-image: url(d.jpg);}
+			25%{background-image: url(e.jpg);}
+			50%{background-image: url(i.jpg);}
+			100%{background-image: url(g.jpg);}
+		}
+
+
 		@Media(max-width: 550px){
 
 			#back{
@@ -51,7 +74,8 @@
 
 </head>
 <body>
-	<div id="back">
+	<div class="start" style="border: 2px solid green;">
+	<!-- <div id="back"> -->
 		<div id="menu-item" class="w3-animate-fading">
 
 
@@ -64,7 +88,11 @@
 				</ul>
 
 			</div>
+
 		<img id="ig2" src="front-view-delicious-chocolate-cake-stand-with-copy-space.jpg">
+		<div>
+		         <img src="woman-gb75206161_640.jpg" id="bout" >
+		</div> 	
 		<div id="ab" class="w3-cursive">
 			
 		
@@ -80,32 +108,29 @@
 	                   to take special orders and referlas from our friends.
 	                   We would like to accept online payment.</p></pre>
 	    </div>
-	    <div>
-		         <img src="woman-gb75206161_640.jpg" id="bout" >
-		</div>         
-		         <div style="transform: translate(50px,-800px);">
+	            
+		         <div style="transform: translate(120px,-800px);">
 		         	<pre><p style="font-family: 'Noto Serif', serif; color: white; font-size: 15px;">
                                  "BAKING IS DONE OUT OF
 		                        LOVE,TO SHARE WITH
 		                    FAMILY AND FRIENDS,TO
 		                         SEE THEM SMILE"
-		                    <p style="font-size: 20px; font-family: 'Noto Serif', serif;">- ANNA OLSON</p></p></pre>
+		                    <p style="font-size: 20px; font-family: 'Noto Serif', serif; font-weight: 500;">- ANNA OLSON</p></p></pre>
 		        </div>
 
 	  
 	    
-        <!-- <h2  style="font-family: 'Noto Serif', serif;">Our Chefs</h2> -->
-        <div class="shi">
-	    <div  class="w3-row  w3-padding w3-center w3-highway-schoolbus" style="width: 1040px; border: 1px solid red; height: 300px; transform:translate(180px,-600px); ">
+        <h2  style="font-family: 'Noto Serif', serif; text-align: center; transform: translate(10px,-720px); font-weight: 600;">Our Chefs</h2>
+	    <div  class="w3-row  w3-padding w3-center" style="width: 1100px; height: 300px; transform: translate(160px,-700px); background: #F6E1C3;">
 	    
-	       <div class="w3-col s4 w3-center w3-animate-zoom"><img src="a.jpg" style="width:220px; height: 280px; border: 1px solid black;"></div>
-           <div class="w3-col s4 w3-center"><img src="b.png" style="width:220px; height: 280px; border:1px solid black; background: white;" ></div>
-           <div class="w3-col s4 w3-center"><img src="c.jpg" style="width:220px; height: 280px; border:1px solid black"></div>
+	       <div class="w3-col s4 w3-center"><img src="a.jpg" style="width:210px; height: 280px;"></div>
+           <div class="w3-col s4 w3-center"><img src="b.png" style="width:210px; height: 280px; background: #ECF2FF;"></div>
+           <div class="w3-col s4 w3-center"><img src="c.jpg" style="width:210px; height: 280px;"></div>
 	    	
 	    </div>
-	</div>
-	   
-	    <footer class="w3-row-padding w3-padding-32 w3-black">
+
+	    <div style="width: 100%; " id="bg"></div>
+    <footer class="w3-row-padding w3-padding-32 w3-black">
         <div class="w3-third" id="sd">
              <h3>Work Tunings</h3>
               <div id="para"></div>
@@ -119,8 +144,6 @@
              </p>
              
         </div>
-    
-
   
    
     
@@ -137,7 +160,9 @@
         </div>
        </div> 
     </footer>  
+	
 	</div>
+</div>	
 
 </body>
 </html>

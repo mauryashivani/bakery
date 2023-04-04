@@ -51,7 +51,7 @@
 	cursor: pointer;
 }
 #text{
-	transform: translate(30px,-800px);
+	transform: translate(30px,-700px);
 	font-size: 60px;
 }
 
@@ -102,10 +102,10 @@
 }*/
 
 
- a{
+ /*a{
 	text-decoration: none;
 
-}
+}*/
 .bot{
 	height: 80px;
 	width: 100%;
@@ -196,7 +196,7 @@ h4 {
 /*About*/
 
 #ab{
-	transform: translate(100px,-900px);
+	transform: translate(100px,-1000px);
 	color: white;
 	font-size: 20px;
 	trns
@@ -234,7 +234,8 @@ h4 {
 	height: 250px;
 	width: 200px;
 	border: 2px solid white;
-	transform: translate(30px,-800px);
+	transform: translate(30px,-350px);
+
 /*	rotate: 5deg;*/
 
 

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	<style>
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		 body{
+        	/*background: url(man.jpg) no-repeat;*/
+        	/*opacity: 50px;*/
+        	background-size: cover;
+        	align-items: center;
+        	justify-content: center;
+        	display: flex;
+        	font-family: sans-serif;
+        	color: white;
+        	background: #BA90C6;
+        }
+		.main{
+			height: auto;
+			width: 900px;
+			/*border: 1px solid black;*/
+			margin: auto;
+			margin-top: 100px;
+			display: flex;
+			position: relative;
+			border-radius: 5px;
+			border: 1px solid silver;
+		}
+		.main: hover{
+			box-shadow: 0 0 20px;
+		}
+		#main1{
+			height: 500px;
+			width: 450px;
+			/*border: 1px solid blue;*/
+			background: black;
+
+
+		}
+
+		#main1 p{
+			margin-left: 5px;
+			font-size: 15px;
+			text-align: center;
+		}
+		#main2{
+			height: 500px;
+			width: 450px;
+			/*border: 1px solid blue;*/
+
+		}
+		h2{
+			font-size: 30px;
+			font-weight: 600;
+			text-align: center;
+			font-family: 'Noto Serif', serif;
+		}
+		form{
+			padding: 20px 40px;
+
+		}
+		label{
+			font-size: 18px;
+			margin: 5px;
+
+		}
+		 input{
+        	height: 80px;
+        	width: 350px;
+        	padding: 0 5px;
+        	font-size: 18px;
+        	outline: none;
+        	border: 1px solid silver;
+		}
+
+		input:hover{
+			cursor: pointer;
+			background: black;
+			color: white;
+			box-shadow: 0 0 5px;
+		}
+		#main2 img{
+			height: 500px;
+			width: 450px;
+			/*object-fit: contain;*/
+		}
+
+		#text{
+			margin-top: 50px;
+		}
+		.a1{
+			height: 20px;
+		}
+		#val{
+			margin-top: 30px;
+		}
+		#btn{
+			margin-left: 70px;
+			margin-top: 20px;
+			width: 300px;
+			height: 50px;
+			background: rosybrown; 
+		}
+		#btn:hover{
+			cursor: pointer;
+			background: black;
+			color: white;
+			box-shadow: 0 0 5px;
+		}
+
+	</style>
+</head>
+<body>
+	<div style="position: absolute; margin-top: -500px;"><h1 style="color: black;
+	font-family: 'Noto Serif', serif;;">Contact Us</h1></div>
+	<div class="main">
+		<div id="main1">
+			<div id="text">
+			<h2>Get in touch with us</h2>
+			<p style="margin-top: 15px;"><i>Have questions? we are looking forward to hearing<br>
+    	    from you and assist you in anyway possible</i></p></div>
+    	    <hr style="width:330px; color: blueviolet;
+    	    margin-left: 55px; margin-top: 20px;">
+    	    <div id="val">
+			<form >
+				<label for="d1">Name</label>
+				<input type="text" name="name" id="d1" class="a1"><br>
+				<label for="d2">Email</label>
+				<input type="email" name="email" id="d2" class="a1"><br>
+				<label for="d3">Address</label>
+				<input type="text" name="" class="a1"><br>
+				<label for="d4">Message</label>
+				<input type="text" name="" class="a1">
+				<!-- <textarea placeholder="message" id="d4"></textarea> -->
+
+
+			</form>
+			<input type="submit"value="Send" name="" id="btn">
+		    </div>
+		</div>
+		<div id="main2">
+			<img src="car.jpg">
+		</div>
+	</div>
+
+</body>
+</html>

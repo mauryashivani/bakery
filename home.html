@@ -26,6 +26,20 @@
          	     -webkit-transform: scale(1.2);
          	     transform: scale(1.2);
          }
+         .sign{
+         	position: absolute;
+         	display: flex;
+         	margin:  10px;
+         	padding: 5px;
+         	/*justify-content: space-between;*/
+         	
+         }
+         .sign h5:hover{
+         	border: 1px solid black;
+         	background: black;
+         	cursor: pointer;
+         	color: white;
+         }
 
          @Media(max-width: 550px){
          	#menu-items{
@@ -74,6 +88,7 @@
             25%  {background-color: url(try.jpg);}
             50%  {background-color:url(pexels-jasmine-lew-140831.jpg);}
             100% {background-color: url(try.jpg);}
+
           }
          
      </style>
@@ -83,6 +98,10 @@
 	<body>
 		<div id="body">
 		<div id="container">
+			<div class="sign">
+				<a href="signup.html"><h5 style="margin:10px">Sign up</h5></a>
+                    <h5>Sign in</h5>
+			</div>
 
 			<div id="menu-items">
 
