@@ -10,6 +10,8 @@
 
 .root{
 	--main-colors: red;
+	--text-color:black;
+	--bg-color:white;
 }
 body{
 	color: var(--text-colors);
@@ -38,7 +40,7 @@ section{
 	text-align: center;
 	margin-bottom: 1.5rem;
 }
-.nav-container{
+.container{
 	max-width: 1068px;
 	margin: auto;
 	width: 100%;
@@ -54,7 +56,7 @@ header{
 	z-index: 100;
 }	
 
-nav{
+.nav{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;

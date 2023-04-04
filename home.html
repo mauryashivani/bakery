@@ -44,11 +44,6 @@
          		width: 100%;
          	}
 
-         	#text{
-         		font-size: 40px;
-         		transform: translate(10px,-400px);
-         	}
-
          	#td{
          		transform: translate(300px,-120px);
          	}
@@ -65,6 +60,22 @@
          		height: 200px;
          	}
          }
+
+         #ig{
+         /*	 width: 100px;
+           height: 100px;*/
+           background-color: red;
+           animation-name: example;
+           animation-duration: 4s;
+          }
+
+         @keyframes example {
+            0%   {background-image: url(pexels-jasmine-lew-140831.jpg);}
+            25%  {background-color: url(try.jpg);}
+            50%  {background-color:url(pexels-jasmine-lew-140831.jpg);}
+            100% {background-color: url(try.jpg);}
+          }
+         
      </style>
 		
 		
@@ -72,12 +83,8 @@
 	<body>
 		<div id="body">
 		<div id="container">
-			<div style="position: absolute; font-size:50px; cursor: pointer;">
-			    <a href="login.html"><i class="fa fa-user"></i></a></div>
-
 
 			<div id="menu-items">
-
 
 
 				<ul id="ul">
@@ -92,7 +99,7 @@
 			
 
 
-
+           
                <img src="pexels-jasmine-lew-140831.jpg" id="ig" class="mySlides" style="width:100%">
                <div id="text">
                	<h1 style="font-size: 100px;">Wealcome</h1>

@@ -24,6 +24,13 @@
         #wed hr{
 	       width: 605px;
            }
+        .cart-qty{
+        	width: 2.5rem;
+        	height: 30px;
+        	transform: translate(100px,-80);
+        	margin-left: 230px;
+        	float: right;
+        }  
 	</style>
 </head>
 <body>
@@ -32,8 +39,10 @@
 			<img src="bir1.jpg" style="width:501px; height:450px;">
 		<hr>
 		<div  id="wed">
-		    <h3>Birthday Cake</h3>
-		    <h4>Price: 800</h4>
+		    <h3>Birthday Cake <span><input type="number" value="1" name="" class="cart-qty"></span></h3>
+		    <h4>Price: 800 </h4>
+		    
+		    
 	        <img src="cart.png" style="width:30px; height:30px; transform: translate(330px,-20px);">
 		    <button class="w3-button w3-green w3-right" style="transform: translate(-20px,-30px);">Buy Now</button>
 
