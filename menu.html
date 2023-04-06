@@ -20,11 +20,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 #cart-icon{
   font-size: 1.1rem;
   cursor: pointer;
+  color: white;
 }
 .cart{
   position: fixed;
   top: 0;
-  right: -100%;
+  right: -360px;
   width: 360px;
   min-height: 100vh;
   padding: 20px;
@@ -145,6 +146,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 
     <div class="w3-right w3-padding-16">
       <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
       <i class='bx bx-shopping-bag' id="cart-icon"></i>
       <div class="cart">
         <h2 class="cart-title" style="color:black;">Your Cart</h2>
@@ -154,7 +156,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
             <img src="bir1.jpg" class="cart-img">
             <div class="detail-box">
               <div class="cart-product-title">cake</div>
-              <div class="cart-price">500</div>
+              <div class="cart-price">$500</div>
               <input type="number" value="1" class="cart-quantity"name="">
             </div>
             <!-- remove cart -->
@@ -164,7 +166,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
         <!-- total -->
         <div class="total">
           <div class="total-title">Total</div>
-          <div class="total-price">20</div>
+          <div class="total-price">$500</div>
           </div>
           <!-- buy btn -->
           <button  type="button" class="btn-buy">Buy now</button>
@@ -182,70 +184,70 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 
   <!-- First Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-    <a href="chocolate.html"><div class="w3-quarter">
+    <div class="w3-quarter">
       <img src="umesh-soni-LDnmyOaA-ew-unsplash.jpg" style="width:98%; height: 200px;" class="w3-hover-sepia">
       <div class="w3-second w3-display-position">
       <h5>Chocolate Cake</h5>
-      <p>Price:500</p><i class='bx bx-shopping-bag' style="transform: translate(160px,-40px); color: black; font-size: 20px;">
+      <p>Price:500</p><i class='bx bx-shopping-bag cart-icon' style="transform: translate(160px,-40px); color: black; font-size: 20px;">
         
       </i>
 
       
       <!-- <button class="w3-button w3-round w3-green" style="transform: translate(60px);">Order now</button> -->
-    </div></a>
+    </div>
 
     </div>
-    <a href="wed.html"><div class="w3-quarter" >
+    <div class="w3-quarter" >
 
       <img src="pexels-brent-keane-1702373.jpg" alt="Steak" style="width:95%; height:200px"  class="w3-hover-shadow">
       <!-- <img src="veg.png"> -->
       <h5>Wedding Cake</h5>
       <p>Price:500</p>
-      <i class='bx bx-shopping-bag' style="transform: translate(120px,-40px); color: black; font-size: 20px;">
+      <i class='bx bx-shopping-bag' style="transform: translate(100px,-40px); color: black; font-size: 20px;">
         
       </i>
       
       <!-- <button class="w3-button w3-round w3-green" style="transform: translate(30px);">Order now</button> -->
-      </div></a>
-    <a href="fruit.html"></a><div class="w3-quarter">
+      </div>
+      <div class="w3-quarter">
       <img src="pexels-geovane-souza-15071190.jpg" style="width:102%;  height:200px;" class="w3-hover-sepia">
       <h5>Fruit Cake</h5>
       <p>Price:500</p>
       
        <!-- <button class="w3-button w3-round w3-green" style="transform: translate(30px);">Order now</button> -->
-    </div></a>
-    <a href="birth.html"><div class="w3-quarter">
+    </div>
+    <div class="w3-quarter">
       <img src="bir1.jpg" style="width:90%; height:200px" class="w3-hover-sepia">
       <h5>Birthday Cake</h5>
       <p>Price:500</p>
        
        <!-- <button class="w3-button w3-round w3-green" style="transform: translate(30px);">Order now</button> -->
-    </div></a>
+    </div>
   </div>
   
   <!-- Second Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center">
-    <a href="cup.html"><div class="w3-quarter" >
+    <div class="w3-quarter" >
       <img src="cup.jpg" style="width:90%; height: 200px;" class="w3-hover-sepia">
       <h5>Cup Cake</h5>
       <p>Price:400</p>
      
       <!-- <button class="w3-button w3-round w3-green">Order now</button> -->
-    </div></a>
-    <a href="lemon.html"><div class="w3-quarter" id="food1">
-      <img src="https://www.pngkey.com/png/detail/494-4946918_california-lemon-cake-6-cake-cheesecake.png" alt="California Lemon Cake 6” Cake - Cheesecake@pngkey.com" style="width: 90%; height: 200px; " class="w3-hover-sepia" >
+    </div>
+    <div class="w3-quarter" id="food1">
+      <img src="lemon2.jpg" style="width: 90%; height: 200px; " class="w3-hover-sepia" >
      <h5>Lemon Cake</h5>
       <p>Price:400</p>
      
       <!-- <button class="w3-button w3-round w3-green">Order now</button> -->
-    </div></a>
-    <a href="kit.html"><div class="w3-quarter" >
+    </div>
+    <div class="w3-quarter" >
       <img src="kit kat.png" style="width:100%; height:200px;">
      <h5>Kit Kat Cake</h5>
       <p>Price:400</p>
       
        <!-- <button class="w3-button w3-round w3-green">Order now</button> -->
-    </div></a>
+    </div>
      <a href="vanila.html"><div class="w3-quarter" >
       <img src="van.jpg" alt="Vanilla Cake - Birthday Cake@seekpng.com" style="width:85%; height:200px;">
      <h5>Vanila Cake</h5>
@@ -324,4 +326,14 @@ function w3_close() {
 <script src="main.js"></script>
 
 </body>
+
+
+
 </html>
+
+
+
+
+
+
+
