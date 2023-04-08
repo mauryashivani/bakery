@@ -58,6 +58,11 @@ h2{
     padding: 10px;
     font-size: 14px;   
 }
+.form-control input:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px;
+    border-color: lightskyblue;
+}
 
 .form-control input:focus{
     outline: 0;
@@ -95,4 +100,9 @@ h2{
     font-size: 16px;
     margin-top:20px;
     width:100%;
+}
+.form button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px;
+    background: green;
 }
