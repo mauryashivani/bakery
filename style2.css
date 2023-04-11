@@ -23,8 +23,8 @@ img{
 	width: 100%;
 }
 .logo{
-	font-size: 1.1rem;
-	color: var(--text-color);
+	font-size: 1.5rem;
+	color: black;
 	font-weight: 400;
 }
 
@@ -72,13 +72,55 @@ header{
 .shop-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(220px,auto));
-	gap: 1.5rem;
+	gap: 2rem;
+	
+}
+
+
+
+/*cart*/
+.cart{
+	position: fixed;
+	top: 0;
+	right: 0px;
+	width: 360px;
+	min-height: 100vh;
+	padding: 20px;
+	background: white;
+	box-shadow: 2px 0 4px hsl(0 4% 15%/10%);
+	transition: 0.3s;
+}
+.cart.active {
+	right: 0;
+}
+
+.cart-img{
+	height: 100px;
+	width: 100px;
+	object-fit: contain;
+	padding: 10px;
+}
+
+.cart-title{
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-top: 2rem;
+}
+
+.cart-box{
+	display: grid;
+	grid-template-columns: 32% 50% 18%;
+	align-items: center;
+	gap: 1rem;
+	margin-top: 1rem;
 }
 
 .detail-box{
 	display: grid;
 	row-gap: 0.5rem;
 }
+
 .cart-product-title{
 	text-transform: uppercase;
 	font-size: 1rem;
@@ -86,8 +128,8 @@ header{
 .cart-price{
 	font-weight: 500;
 }
-.cart-quentity{
-	border: 1px solid var(--text-color);
+.cart-quantity{
+	border: 1px solid black;
 	width: 2.4rem;
 	text-align: center;
 	font-size: 1rem;
@@ -95,7 +137,7 @@ header{
 .cart-remove{
 	font-size: 24px;
 	cursor: pointer;
-	color: var(--main-color);
+	color: brown;
 }
 .total{
 	display: flex;
@@ -115,61 +157,27 @@ header{
 	margin: 1.5rem auto 0 auto;
 	padding: 12px 20px;
 	border: none;
-	background: var(--main-colors);
+	background: brown;
 	color: var(bg-color);
 	font-size: 1rem;
 	font-weight: 500;
 	cursor: pointer;
 }
 .btn-buy:hover{
-	background: black;
+	background: green;
 }
 
 #close-cart{
 	position: absolute;
 	top: 1rem;
-	right: 0.8;
+	right: 0.8rem;
 	font-size: 2rem;
-	color: var(--text-color);
+	color: brown;
 	cursor: pointer;
-}
-
-.cart{
-	position: fixed;
-	top: 0;
-	right: -100%;
-	width: 360px;
-	min-height: 100vh;
-	padding: 20px;
-	background: lightgrey;
-	box-shadow: 2px 0 4px hsl(0 4% 15%/10%);
-	transition: 0.3s;
-}
-.cart-active{
-	right: 0;
-}
-
-.cart-img{
-	height: 100px;
-	width: 100px;
-	object-fit: contain;
-	padding: 10px;
-}
-
-.cart-title{
-	text-align: center;
-	font-size: 1.5rem;
-}
-
-.cart-box{
-	display: grid;
-	grid-template-columns: 32% 50% 18%;
-	align-items: center;
-	gap: 1rem;
-	margin-top: 1rem;
 }
 .product-box{
 	position: revert;
+	background: #F6F1E9;
 }
 
 .product-box:hover{
@@ -178,7 +186,7 @@ header{
 	transform: 0.4s;
 }
 .product-img{
-	width: 100%;
+	width: 230px;
 	height: auto;
 	margin-bottom: 0.5rem;
 }
@@ -202,5 +210,6 @@ header{
 }
 
 .add-cart:hover{
+	background: hsl(249, 32%, 17%);
 
 }

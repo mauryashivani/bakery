@@ -14,6 +14,12 @@ closeCart.onclick = () => {
 };
 
 
-if (document.readyState == 'loading'){
-	document.addEventListner("DOMContentLoaded",ready)
-}
+// if (document.readyState == 'loading'){
+// 	document.addEventListner("DOMContentLoaded",ready);
+// } else{
+// 	ready();
+// }
+// // making function
+// function ready(){
+// 	// remove item from cart
+	
