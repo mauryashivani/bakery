@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gallery</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		body{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			background: #FFF3E2;
+		}
+
+
+		img{
+			height: 400px;
+			width: 250px;
+			border-radius: 3px;
+			
+		}
+		h2{
+			float: top;
+		}
+
+		.container{
+			display: flex;
+			/*border: 2px solid black;*/
+			height: auto;
+		}
+		.card{
+			height: 300px;
+			margin: 50px;
+			box-shadow: 5px 5px 20px black;
+			overflow: hidden;
+
+		}
+		.intro{
+			height: 60px;
+			width: 250px;
+			padding: 6px;
+			box-sizing: border-box;
+			position: absolute;
+			background: rgb(27, 27, 27, .5);
+			bottom: 155px;
+			color: white;
+			transition: .5s;
+		}
+		h1{
+			margin: 10px;
+			font-size: 25px;
+		}
+		p{
+			font-size: 15px;
+			margin: 20px;
+			opacity: 0;
+			visibility: hidden;
+		}
+		span{
+			font-weight: bold;
+		}
+		.card:hover{
+			cursor: pointer;
+
+		}
+		.card:hover .intro{
+			bottom: 150px;
+			background: black;
+			height: 160px;
+		}
+		.card:hover p{
+			opacity: 1;
+			visibility: visible;
+		}
+		.card:hover img{
+			transform: scale(1.1) rotate(-3deg);
+		}
+
+		@media(max-width: 550px){
+			.container{
+				display: grid;
+				grid-template-columns: 100%;
+				grid-template-rows: 33.3%,33.3%,33.3%;
+				grid-row-gap: 5px;
+				margin-top: 100px;
+			}
+
+			img{
+				height: 300px;
+			}
+			.card{
+				height: 200px;
+			}
+
+			.intro{
+				height: 40px;
+				font-size: 15px;
+				bottom: -150px;
+			}
+
+            .card:hover .intro{
+			    bottom: -150px;
+			    background: black;
+			    height: 120px;
+			    font-size: 10px;
+			}
+			
+			.card:hover h1{
+				font-size: 15px;
+			}    
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- <h2>Tranding Cake Flavors in India</h2> -->
+		<div class="card">
+			<img src="umesh-soni-LDnmyOaA-ew-unsplash.jpg">
+			<div class="intro">
+				<h1>Chocolate Cake</h1>
+				<p><span>The</span> first choice of every Indian is without any doubt- Chocolate Cake. One of the most trending cake flavours.</p>
+				
+			</div>
+
+			
+		</div>
+
+		<div class="card">
+			<img src="van.jpg">
+			<div class="intro">
+				<h1>Vanila Cake</h1>
+				<p><span>The</span> second most loved cake flavors India. Vanilla is like a classic flavor because of its flavor and fragrance. </p>
+				
+			</div>
+
+			
+		</div>
+
+		<div class="card">
+			<img src="kit kat.png">
+			<div class="intro">
+				<h1>Kit Kat Cake</h1>
+				<p><span>Every</span> KitKat lover loves to eat KitKat at some point or another. So on their special days bring Kitkats to decorate their cakes and mix them on the festive cakes of your loved ones. </p>
+				
+			</div>
+
+			
+		</div>
+	</div>	
+
+		
+
+</body>
+</html>
