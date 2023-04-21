@@ -1,3 +1,7 @@
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,300;1,300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+</style>
 *{
 	margin: 0px;
 	padding: 0px;
@@ -50,9 +54,43 @@
 	color: brown;
 	cursor: pointer;
 }
+
+#text h1,h3{
+	font-family: 'Yeseva One', cursive;
+}
 #text{
-	transform: translate(30px,-700px);
+	transform: translate(30px,-600px);
 	font-size: 60px;
+	 animation-name: my-animation;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+  /* other properties */
+ /* width: 1200px;
+  height: 300px;*/
+  border-radius: 10px;
+  position: relative;
+  left: 0; 
+  right: 0; 
+  /*margin-left: auto;
+  margin-right: auto; */
+
+}
+
+@keyframes my-animation {
+  from {
+    color: #ff7a59;
+    width: 300px;
+    top: 10px;
+  }
+  to {
+    color: #33475b;
+    width: 300px;
+    top: 100px;
+  }
+
 }
 
 #bottom{
@@ -77,6 +115,24 @@
 
 #sd{
 	margin-left: 40px;
+	/*border: 1px solid green;*/
+	transform: translate(10px,150px);
+	width: 300px;
+
+
+}
+#sd h3{
+	font-family: 'Poppins', sans-serif;
+	font-size: 30px;
+}
+#td{
+	/*border: 1px solid green;*/
+	transform: translate(80px,-140px);
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+}
+#td h3{
+	font-size: 30px;
 }
 
 
@@ -102,12 +158,14 @@
 }*/
 
 
- /*a{
+ a{
 	text-decoration: none;
 
-}*/
+}
+
+
 .bot{
-	height: 80px;
+	height: 100px;
 	width: 100%;
 	/*margin-top: 5px;*/
 	background-color:lightcyan;
@@ -116,6 +174,21 @@
 }
 #list h5{
 	 font-family: sans-serif;
+}
+#map{
+	height: 270px;
+	width: 305px;
+	transform: translate(500px,80px);
+	/*border: 2px solid red;*/
+	/*font-size: 30px;*/
+}
+
+#map h3{
+	font-size: 30px;
+}
+#map:hover{
+	box-shadow: 0,0,5px,5px royalblue;
+
 }
 
 /*Contact*/
@@ -276,5 +349,6 @@ h4 {
 	margin: 30px;
 }
 
+/*Register page*/
 
-			
+

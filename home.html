@@ -9,13 +9,18 @@
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
         <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma"> -->
+        <style>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+</style>
+</style>
     <style>
-         body,h1,h2,h3,h4,h6 {font-family: "Karma", sans-serif}
+         body,h1,h2,h3,h4,h6 {font-family: 'Yeseva One', cursive;}
          .w3-bar-block .w3-bar-item {padding:20px}
 
-         h5{
+         /*h5{
          	font-family: Georgia, serif;
-         }
+         }*/
 
          #ho:hover{
          	     -webkit-transform: scale(0.1);
@@ -31,18 +36,19 @@
          	display: flex;
          	margin:  10px;
          	padding: 5px;
+          cursor: pointer;
          	/*justify-content: space-between;*/
          	
          }
-         .sign h5:hover{
+         .sign:hover{
          	border: 1px solid black;
          	background: black;
-         	cursor: pointer;
-         	color: white;
+         
+         
          }
-
-         #list a{
-         	text-decoration: none;
+         #list h5{
+         	font-family: 'Times New Roman', serif;
+         	font-size: 25px;
          }
 
          @Media(max-width: 550px){
@@ -79,21 +85,7 @@
          	}
          }
 
-         #ig{
-         /*	 width: 100px;
-           height: 100px;*/
-           background-color: red;
-           animation-name: example;
-           animation-duration: 4s;
-          }
-
-         @keyframes example {
-            0%   {background-image: url(pexels-jasmine-lew-140831.jpg);}
-            25%  {background-color: url(try.jpg);}
-            50%  {background-color:url(pexels-jasmine-lew-140831.jpg);}
-            100% {background-color: url(try.jpg);}
-
-          }
+        
          
      </style>
 		
@@ -102,10 +94,10 @@
 	<body>
 		<div id="body">
 		<div id="container">
-			<div class="sign">
-				<a href="signup.html"><h5 style="margin:10px">Sign up</h5></a>
+			<a href="reg.html"><div class="sign">
+				<h5 style="margin:10px">Sign up</h5>
                     
-			</div>
+			</div></a>
 
 			<div id="menu-items">
 
@@ -114,7 +106,7 @@
 					<li><a href="home.html">Home</a></li>
 					<li><a href="menu.html">Menu</a></li>
 					<li><a href="about.html">About us</a></li>
-					<!-- <li><a href="Services.html">Services</a></li> -->
+					<li><a href="gallery.html">Gallery</a></li>
 					<li><a href="contact.html">Contact Us</a></li>
 				</ul>
 
@@ -137,7 +129,7 @@
 		 
 		</div>
 		
-		<div class= "w3-container w3-main w3-padding w3-center  w3-2018-meerkat" style= "margin-top: 50px;">
+		<div class= "w3-container w3-main w3-padding w3-center  w3-2018-meerkat" style= "margin-top: 40px;">
 			<h1 style="font-family: 'Times New Roman', serif;"><b>Our Special Cake</b></h1>
 
 		<div>
@@ -179,7 +171,7 @@
 
 	
 
-   <footer class="w3-row-padding w3-padding-32 w3-black">
+   <footer class="w3-row-padding w3-padding-32 w3-black"id="footer">
         <div class="w3-third" id="sd">
              <h3>Work Tunings</h3>
               <div id="para"></div>
@@ -187,12 +179,15 @@
              	<ul>
              	<li>Monday-Friday:8am-8pm</li>
              	<li>Saturday:9am-4pm</li>
-             	<li>Sunday:closed</li>
+             	<li>Sunday:8am-10pm</li>
              </ul>
 
              </p>
              
-        </div>   
+        </div>
+        
+        <div class="w3-center" id="map"><div class="w3-top" style="font-size:20px; font-family: 'Poppins', sans-serif;sans-serif;"><h3>Our location</h3></div>  
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.335179746722!2d75.89112842409399!3d22.752939129363618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396302af403406fb%3A0x5b50834b117f8bab!2sVijay%20Nagar%2C%20Indore%2C%20Madhya%20Pradesh%20452010!5e0!3m2!1sen!2sin!4v1681888232054!5m2!1sen!2sin" width="300" height="205" style="border:0; transform: translate(0px,-127px); position: relative;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div> 
           
           
   
@@ -204,10 +199,10 @@
         <div style= "justify-content: space-between;">
 
            <ul>
-           	<li><i class="fa fa-facebook"></i></li>
-           	<li><i class="fa fa-instagram"></i></li>
-           	<li> <i class="fa fa-twitter"></i></li>
-           	<li> <i class="fa fa-whatsapp"></i></li>
+           	<a href="www.facebook.com"><li><i class="fa fa-facebook"></i></li></a>
+           	<a href="www.instagram.com"><li><i class="fa fa-instagram"></i></li></a>
+           	<a href="www.twitter.com"><li><i class="fa fa-twitter"></i></li></a>
+           	<a href="www.whatsapp.com"><li><i class="fa fa-whatsapp"></i></li></a>
            </ul>
        
         <div>

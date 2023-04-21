@@ -10,6 +10,8 @@
 			padding: 0;
 		}
 
+		
+
 		body{
 			display: flex;
 			align-items: center;
@@ -37,6 +39,7 @@
 		.card{
 			height: 300px;
 			margin: 50px;
+
 			box-shadow: 5px 5px 20px black;
 			overflow: hidden;
 
@@ -89,6 +92,8 @@
 				grid-template-rows: 33.3%,33.3%,33.3%;
 				grid-row-gap: 5px;
 				margin-top: 100px;
+				
+				/*flex-direction: column;*/
 			}
 
 			img{
@@ -96,6 +101,7 @@
 			}
 			.card{
 				height: 200px;
+				
 			}
 
 			.intro{
@@ -113,9 +119,25 @@
 			
 			.card:hover h1{
 				font-size: 15px;
+			}
+
+			#intro1{
+				bottom: 400px;
+			}
+
+			#intro2{
+				bottom: 135px;
 			}    
 
+            #intro3{
+				bottom: -170px;
+			}    
+    
+
 		}
+
+
+
 	</style>
 </head>
 <body>
@@ -123,7 +145,7 @@
 		<!-- <h2>Tranding Cake Flavors in India</h2> -->
 		<div class="card">
 			<img src="umesh-soni-LDnmyOaA-ew-unsplash.jpg">
-			<div class="intro">
+			<div class="intro" id="intro1">
 				<h1>Chocolate Cake</h1>
 				<p><span>The</span> first choice of every Indian is without any doubt- Chocolate Cake. One of the most trending cake flavours.</p>
 				
@@ -134,7 +156,7 @@
 
 		<div class="card">
 			<img src="van.jpg">
-			<div class="intro">
+			<div class="intro"  id="intro2">
 				<h1>Vanila Cake</h1>
 				<p><span>The</span> second most loved cake flavors India. Vanilla is like a classic flavor because of its flavor and fragrance. </p>
 				
@@ -145,7 +167,7 @@
 
 		<div class="card">
 			<img src="kit kat.png">
-			<div class="intro">
+			<div class="intro" id="intro3">
 				<h1>Kit Kat Cake</h1>
 				<p><span>Every</span> KitKat lover loves to eat KitKat at some point or another. So on their special days bring Kitkats to decorate their cakes and mix them on the festive cakes of your loved ones. </p>
 				
@@ -153,7 +175,7 @@
 
 			
 		</div>
-	</div>	
+	</div>
 
 		
 

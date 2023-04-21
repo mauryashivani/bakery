@@ -3,118 +3,294 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Cantact Page</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
+	<title>Contact</title>
 	<style>
-		@Media(max-width: 550px){
-			body{
-				font-size: 15px;
-			}
 
-			#start{
-				width: 550px;
-			}
-			#start img{
-				margin: auto;
-			}
-			#tact{
-				width: 400px;
-			}
-			#detail button{
-				transform: translate(280px,-70px);
-			}
-			#message{
-				transform: translate(220px,-150px);
+		*{
+			margin: 0;
+			padding: 0;
+		}
 
+		:root{
+           --succes-color: #2ecc71;;
+           --error-color: #e74c3c;
+        }
 
-			}
+		 body{
+        	background-image: url(cp.jpg);
+        	/*opacity: 50px;*/
+        	/*background-size: cover;*/
+        	align-items: center;
+        	justify-content: center;
+        	display: flex;
+        	font-family: sans-serif;
+        	color: white;
+        	background: #B0DAFF;
+        }
+		.main{
+			height: 550px;
+			width: 900px;
+			/*border: 1px solid black;*/
+			margin: auto;
+			margin-top: 100px;
+			display: flex;
+			position: relative;
+			border-radius: 5px;
+			border: 1px solid silver;
+		}
+		.main: hover{
+			box-shadow: 0 0 20px;
+		}
+		#main1{
+			height: 550px;
+			width: 450px;
+			/*border: 1px solid blue;*/
+			background: black;
 
-			#td{
-				transform: translate(25px);
-				font-size: 15px;
-			}
-			.bot{
-				height: 100px;
-			}
 
 		}
+
+		#main1 p{
+			margin-left: 5px;
+			font-size: 15px;
+			text-align: center;
+		}
+		#main2{
+			height: 550px;
+			width: 450px;
+			/*border: 1px solid blue;*/
+
+
+		}
+		h2{
+			font-size: 30px;
+			font-weight: 600;
+			text-align: center;
+			font-family: 'Noto Serif', serif;
+
+		}
+		.form{
+           padding: 30px 40px;
+        }
+
+        .form-control{
+           margin-bottom: 10px;
+           padding-bottom: 20px;
+           position: relative;
+        }
+
+        .form-control label{
+           color:#fff;
+           display: block;
+           margin-bottom: 5px; 
+        }
+
+        .form-control input:focus{
+        	outline: 0;
+        	border-color: #777;
+        }
+        
+        .form-control.success input {
+            border-color: var(--succes-color);
+        }
+
+        .form-control.error input {
+            border-color: var(--error-color);    
+        }
+
+		input:hover{
+			cursor: pointer;
+			background: black;
+			color: white;
+			box-shadow: 0 0 5px;
+		}
+
+		.form-control small{
+			color: var(--error-color);
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			visibility: hidden;
+		}
+		.form-control.error small{
+			visibility: visible;
+		}
+
+		
+
+		#main2 img{
+			height: 550px;
+			width: 450px;
+			/*object-fit: contain;*/
+		}
+
+		#text{
+			margin-top: 50px;
+		}
+		.a1{
+			height: 20px;
+		}
+		#val{
+			margin-top: 20px;
+		}
+
+		textarea{
+			margin: 10px 2px;
+		}
+		#btn{
+			margin-left: 200px;
+			transform: translate(0px,-50px);
+			width: 200px;
+			height: 40px;
+			background: rosybrown; 
+		}
+		#btn:hover{
+			cursor: pointer;
+			background: black;
+			color: white;
+			box-shadow: 0 0 5px;
+		}
+		
 	</style>
 </head>
 <body>
-	<div id="back">
-		<div id="start"><img src="https://www.pngkey.com/png/detail/463-4635774_the-cake-lady-bakery-bakery-logo-png-transparent.png" alt="The Cake Lady Bakery - Bakery Logo Png Transparent@pngkey.com" style="height: 100px; top: 2px;" "width: 100%" "margin-left: 200px;"></div>
-		<h4 style="float: right;"><a href="home.html">Back</a></h4>
-	<div id="tact">
+	<div style="position: absolute; margin-top: -600px;"><h1 style="color: black;
+	font-family: 'Noto Serif', serif;;">Contact Us</h1></div>
+	<div class="main">
+		<div id="main1">
+			<div id="text">
+			<h2>Get in touch with us</h2>
+			<p style="margin-top: 15px;"><i>Have questions? we are looking forward to hearing<br>
+    	    from you and assist you in anyway possible</i></p></div>
+    	    <hr style="width:330px; color: blueviolet;
+    	    margin-left: 55px; margin-top: 20px;">
+    	    <div id="val">
+			<form id="form" class="form" >
+				<div class="form-control">
+				   <label for="username">Name</label>
+				   <input type="text" name="name" id="username" class="a1">
+				   <small>Error Message</small>
+				</div>
 
-        <div id="con" class="w3-container ">
+				<!-- <div class="form-control">
+				   <label for="d5">Phone No</label>
+				   <input type="text" name="" id="d5">
+				   <small>Error Message</small>
+			    </div> -->
 
-    	    <h1>Get in touch with us</h1>
-    	    <!-- <h5></h5> -->
-    	    <p>Have questions? we are looking forward to hearing<br>
-    	    from you and assist you in anyway possible</p>
-    	    <hr></hr>
-    	</div>
-        <div id="detail">
-    	    <p>Name<span>*</span></p>
-    	    <input type="text" name="" placeholder="Name" required>
-    	    <p>Enter your Email Address<span>*</span></p>
-    	    <input type="Email" name="" placeholder="Email" required>
-    	    <p>Enter your Subject<span>*</span></p>
-    	    <input type="text" name="" placeholder="Subject" required>
-    	    <div id="message">
+				<div class="form-control">
+				   <label for="email">Email</label>
+				   <input type="email" name="email" id="email" class="a1">
+				   <small>Error Message</small>
+				</div>
+				<div class="form-control">   
+				   <label for="address">Address</label>
+				   <input type="text" name="" class="a1" id="address">
+				   <small>Error Message</small>
+				</div>
+				<div class="form-control">   
+				   <label for="d4">Message</label>
+				  <small>Error Message</small>
+				  <!-- <input type="text" name="" class="a1"> -->
+				  <textarea placeholder="message" id="d4"></textarea>
+                </div>
 
-    	        <p>Enter Your Message<span>*</span></p>
-    	        
-    	        <textarea placeholder="message" required></textarea>
-    	       
-    	    </div>
-    	     <button class="w3-button w3-black w3-hover-green w3-center">Submit</button>	    
-    
-    </div>
+                <input type="submit"value="Send" name="" id="btn">
 
-    </div>
-     <footer class="w3-row-padding w3-padding-32 w3-black" style="margin-top: 20px;">
-        <div class="w3-third" id="sd">
-             <h3>Work Tunings</h3>
-              <div id="para"></div>
-             <p>Our work timings are
-             	<ul>
-             	<li>Monday-Friday:8am-8pm</li>
-             	<li>Saturday:9am-4pm</li>
-             	<li>Sunday:closed</li>
-             </ul>
+			</form>
+			
+		    </div>
+		</div>
+		<div id="main2">
+			<img src="car.jpg">
+		</div>
+	</div>
 
-             </p>
-             
-        </div>   
-          
-          
-  
-   
-    
-       <!-- <div id="line"></div> -->
-       <div class="w3-third w3-serif <!-- w3-right -->" id="td">
-       <h3>Social Media</h3>
-        <div style= "justify-content: space-between;">
+	<script>
+		const form = document.getElementById('form');
+		const username = document.getElementById('username');
+		const email = document.getElementById('email');
+		const address = document.getElementById('address');
 
-           <i class="fa fa-facebook"></i>
-           <i class="fa fa-instagram"></i>
-           <i class="fa fa-twitter"></i>
-           <i class="fa fa-whatsapp"></i>
-       
-        <div>
-       </div> 
+		//Show input error messages
+        function showError(input, message) {
+        const formControl = input.parentElement;
+        formControl.className = 'form-control error';
+        const small = formControl.querySelector('small');
+        small.innerText = message;
+    }
+
+      //show success colour
+       function showSucces(input) {
+       const formControl = input.parentElement;
+       formControl.className = 'form-control success';
+   }
+
+     //check email is valid
+       function checkEmail(input) {
+       const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+       if(re.test(input.value.trim())) {
+         showSucces(input)
+       }else {
+        showError(input,'Email is not invalid');
+       }
+    }
+
+    //checkRequired fields
+      function checkRequired(inputArr) {
+      inputArr.forEach(function(input){
+        if(input.value.trim() === ''){
+            showError(input,`${getFieldName(input)} is required`)
+        }else {
+            showSucces(input);
+        }
+       });
+    }
+
+    //check input Length
+     function checkLength(input, min ,max) {
+      if(input.value.length < min) {
+        showError(input, `${getFieldName(input)} must be at least ${min} characters`);
+      }else if(input.value.length > max) {
+        showError(input, `${getFieldName(input)} must be les than ${max} characters`);
+      }else {
+        showSucces(input);
+      }
+    }
+
+   //get FieldName
+    function getFieldName(input) {
+     return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+    }
+
+// // check passwords match
+// function checkPasswordMatch(input1, input2) {
+//     if(input1.value !== input2.value) {
+//         showError(input2, 'Passwords do not match');
+//     }
+// }
 
 
-    </footer> 
-     <div class="bot"><h4 style="font-family: Gill Sans, sans-serif;"><i>ReachUs</i></h4>
-     	<p>Address:.49 GH Scheme No.54 Vijay Nagar Indore, Madhya Pradesh, India 452010.
-     		<p><i class="fa fa-phone"></i>9865324729,4569235891</p></p>
+//Event Listeners
+form.addEventListener('submit',function(e) {
+    e.preventDefault();
 
-     </div> 
+    checkRequired([username, email,  address]);
+    checkLength(username,3,15);
+    checkLength(address,15,30);
+    // checkLength(password,6,25);
+    checkEmail(email);
+    // checkPasswordMatch(password, password2);
+});
+
+		
+
+		
+
+
+		
+		
+	</script>
 
 </body>
 </html>
