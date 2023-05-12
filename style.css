@@ -102,11 +102,7 @@
 	/*border: 1px solid brown;*/
 	width: 1000px;
 }
-#list:hover{
-	/*cursor: pointer;
-	background: gray;*/
 
-}
 #ho:hover{
 	cursor: pointer;
 	background: lightgrey;
@@ -134,6 +130,18 @@
 #td h3{
 	font-size: 30px;
 }
+
+#sd:hover{
+	background: lightseagreen;
+	cursor: pointer;
+}
+
+#td:hover{
+	background: lightseagreen;
+	cursor: pointer;
+
+}
+
 
 
 #para{
@@ -185,6 +193,7 @@
 
 #map h3{
 	font-size: 30px;
+	font-family: 'Poppins', sans-serif;
 }
 #map:hover{
 	box-shadow: 0,0,5px,5px royalblue;
@@ -307,9 +316,9 @@ h4 {
 	height: 250px;
 	width: 200px;
 	border: 2px solid white;
-	transform: translate(30px,-350px);
+	transform: translate(30px,-360px);
 
-/*	rotate: 5deg;*/
+
 
 
 }

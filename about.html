@@ -4,29 +4,117 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>about</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2021.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
 
 	<style>
-		/**{
-			margin: 0;
-			padding: 0;
-		}*/
+		@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Great+Vibes&family=Poppins:ital,wght@0,300;1,300&family=Yeseva+One&display=swap');
+
+		
+
+       .start{
+       		width: 100%;
+       }
+		
+
+
+	  #ab{
+	      transform: translate(100px,-1000px);
+	      color: white;
+	      font-size: 20px;
+	      trns
+
+       }
+
+    #ig2{
+	    height: 1000px;
+	    width: 100%;
+    }
+
+      
+      #menu-item{
+	       height: 100%;
+	       width: 100%;
+	
+	      position: absolute;
+
+      }
+
+     #menu-item ul{
+	      list-style-type: none;
+	      display: flex;
+	      float: left;
+
+      }
+     #menu-item ul li{
+	     margin: 5px;
+	     padding: 10px;
+
+     }
+
+     #menu-item ul li a{
+	     text-decoration: none;
+	     font-size: 20px;
+	    /*color: darkgrey;*/
+     }
+    #bout{
+	    height: 250px;
+	    width: 200px;
+	    border: 2px solid white;
+	    transform: translate(30px,-360px);
+
+    }
+
+
 
 
 		#bg{
 			height: 650px;
 			width: 100%;
-			/*object-fit: contain;*/
-			/*left: 50%;*/
 			left: 0;
 			position: absolute;
 			background-size: 100% 100%;
             transform: translate(0, -650px);
 			animation-name: start;
 			animation: slider 10s infinite linear;
+		}
+		.start #menu-item{
+			color: #9E6F21;
+			font-family: 'Noto Serif', serif;
+			font-size: 25px;
+		}
+
+		.start #menu-item ul li:hover{
+			background: orangered;
+		}
+		footer{
+			height: 500px;
+
+		}
+
+		#sd{
+			transform: translate(10px,150px);
+		}
+		#td{
+			transform: translate(10px,5px);
+			/*border: 1px solid red;*/
+			width: 500px;
+			font-size: 20px;
+			font-family: 'DM Serif Display', serif;
+		}
+
+		#td li{
+			font-color: white;
+		}
+		
+
+
+		#lg{
+			transform: translate(-50px,160px);
+			
 		}
 
 		@keyframes slider{
@@ -45,7 +133,7 @@
 				height: 1000px;
 
 			}
-			#menu-item{
+			#td #menu-item{
 				width: 300px;	
 				height: 10px;
 				font-size: 10px;
@@ -74,12 +162,12 @@
 
 </head>
 <body>
-	<div class="start" style="border: 2px solid green;">
+	<div class="start"  >
 	<!-- <div id="back"> -->
-		<div id="menu-item" class="w3-animate-fading">
+		<div id="menu-item" >
 
 
-				<ul class="w3-list w3-highway-schoolbus">
+				<ul class="w3-list ">
 					<li><a href="home.html">Home</a></li>
 					<li><a href="menu.html">Menu</a></li>
 					<li><a href="about.html">About us</a></li>
@@ -89,10 +177,10 @@
 
 			</div>
 
-		<img id="ig2" src="front-view-delicious-chocolate-cake-stand-with-copy-space.jpg">
-		<div>
+		<div style="border: 2px solid red; height: 600px;"><img id="ig2" src="front-view-delicious-chocolate-cake-stand-with-copy-space.jpg" no-repeat></div>
+		
 		         <img src="woman-gb75206161_640.jpg" id="bout" >
-		</div> 	
+			
 		<div id="ab" class="w3-cursive">
 			
 		
@@ -115,13 +203,13 @@
 		                        LOVE,TO SHARE WITH
 		                    FAMILY AND FRIENDS,TO
 		                         SEE THEM SMILE"
-		                    <p style="font-size: 20px; font-family: 'Noto Serif', serif; font-weight: 500;">- ANNA OLSON</p></p></pre>
+		                    <b><p style="font-size: 20px; font-family: 'Noto Serif', serif; font-weight: 500; transform: translate(30px,-20px); color: #D14D72">- ANNA OLSON</p></b></p></pre>
 		        </div>
 
 	  
 	    
         <h2  style="font-family: 'Noto Serif', serif; text-align: center; transform: translate(10px,-720px); font-weight: 600;">Our Chefs</h2>
-	    <div  class="w3-row  w3-padding w3-center" style="width: 1100px; height: 300px; transform: translate(160px,-700px); background: #F6E1C3;">
+	    <div  class="w3-row  w3-padding w3-center" style="width: 1100px; height: 300px; transform: translate(130px,-700px); background: #F6E1C3;">
 	    
 	       <div class="w3-col s4 w3-center"><img src="a.jpg" style="width:210px; height: 280px;"></div>
            <div class="w3-col s4 w3-center"><img src="b.png" style="width:210px; height: 280px; background: #ECF2FF;"></div>
@@ -144,18 +232,24 @@
              </p>
              
         </div>
+
+        <div class="w3-third w3-center" id="lg" >
+        	<div><img src="images.jpg" style="width: 200px;"></div>
+        </div>
   
    
     
        <!-- <div id="line"></div> -->
        <div class="w3-third w3-serif <!-- w3-right -->" id="td">
        <h3>Social Media</h3>
-        <div style="font-size: 20px; justify-content: space-between;  ;width: 150px;  border: 2px solid white;">
+        <div style="font-size: 20px; justify-content: space-between;  ;width: 150px;  ">
+        	<ul>
+        		<li><i class="fa fa-facebook"></i></li>
+                <li><i class="fa fa-instagram"></i></li>
+                <li><i class="fa fa-twitter"></i></li>
+                <li><i class="fa fa-whatsapp"></i></li>
 
-           <i class="fa fa-facebook"></i>
-           <i class="fa fa-instagram"></i>
-           <i class="fa fa-twitter"></i>
-           <i class="fa fa-whatsapp"></i>
+           
        
         </div>
        </div> 
