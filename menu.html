@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style2.css">
 	 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+
 </head>
 <body>
 
@@ -16,7 +17,7 @@
 			
 			<h3 href="#" class="logo">Cake Shop</h3>
 
-			 <i class='bx bx-shopping-bag' id="cart-icon"></i>
+			 <i class='bx bx-shopping-bag' id="cart-icon" onclick="addtoCart(this.id)"></i>
 			 <!-- cart -->
 			 <div class="cart" id="cart" >
 			 	<h2 class="cart-title" style="color: black;">Your Cart</h2>
@@ -55,60 +56,66 @@
     <section class="shop container">
 		<h2 class="section-title">Shop Product</h2>
 		<div class="shop-content">
-			<div class="product-box">
+			<div class="product-box" >
 				<img src="bir1.jpg" class="product-img" style="height: 200px;">
 				<h2 class="product-list" >Birthday Cake</h2>
 				<span class="price">Price:500</span>
-				<i class='bx bx-shopping-bag' class="add-cart"></i>
+        <button id="btn-bir" onclick="alert('Your Order is Confirmed')">order</button>
+				<!-- <i class='bx bx-shopping-bag' class="add-cart"></i> -->
 
 			</div>
 
-			<div class="product-box">
+			<div class="product-box" >
 				<img src="umesh-soni-LDnmyOaA-ew-unsplash.jpg" class="product-img" style="height: 200px;">
 				<h2 class="product-list" >Birthday Cake</h2>
 				<span class="price">Price:500</span>
-        <button id="btn-bir" onclick="addtoCart(this.id)">order</button>
+        <button id="btn-bir" onclick="alert('Your Order is Confirmed')">order</button>
 				<!-- <i class='bx bx-shopping-bag'  class="add-cart"></i> -->
 
 			</div>
 
-			<div class="product-box">
+			<div class="product-box" >
 				<img src="pexels-brent-keane-1702373.jpg" class="product-img" style="height: 200px;">
 				<h2 class="product-list" >Birthday Cake</h2>
 				<span class="price">Price:500</span>
-				<i class='bx bx-shopping-bag'  class="add-cart"></i>
+        <button onclick="alert('Your Order is Confirmed')">order</button>
+				<!-- <i class='bx bx-shopping-bag'  class="add-cart"></i> -->
 
 			</div>
 
-			<div class="product-box">
+			<div class="product-box" >
 				<img src="pexels-geovane-souza-15071190.jpg" class="product-img" style="height: 200px;">
 				<h2 class="product-list" >Birthday Cake</h2>
 				<span class="price">Price:500</span>
-				<i class='bx bx-shopping-bag'  class="add-cart"></i>
+        <button onclick="alert('Your Order is Confirmed')">order</button>
+				<!-- <i class='bx bx-shopping-bag'  class="add-cart"></i> -->
 
 			</div>
 
-			<div class="product-box">
+			<div class="product-box" onclick="alert('Your Order is Confirmed')">
 				<img src="cup.jpg" class="product-img" style="height: 200px;">
 				<h2 class="product-list" >Birthday Cake</h2>
 				<span class="price">Price:500</span>
-				<i class='bx bx-shopping-bag' class="add-cart"></i>
+        <button id="btn-bir" onclick="alert('Your Order is Confirmed')">order</button>
+				<!-- <i class='bx bx-shopping-bag' class="add-cart"></i> -->
 
 			</div>
 
-			<div class="product-box">
+			<div class="product-box" >
 				<img src="lemon2.jpg" class="product-img" style="height: 200px;">
 				<h2 class="product-list" >Lemon Cake</h2>
 				<span class="price">Price:500</span>
-				<i class='bx bx-shopping-bag' class="add-cart"></i>
+        <button id="btn-bir" onclick="alert('Your Order is Confirmed')">order</button>
+				<!-- <i class='bx bx-shopping-bag' class="add-cart"></i> -->
 
 			</div>
 
-			<div class="product-box">
+			<div class="product-box" >
 				<img src="kit kat.png" class="product-img">
 				<h2 class="product-list" >Kit Kat Cake</h2>
 				<span class="price">Price:500</span>
-				<i class='bx bx-shopping-bag'  class="add-cart"></i>
+        <button id="btn-bir" onclick="alert('Your Order is Confirmed')">order</button>
+				<!-- <i class='bx bx-shopping-bag'  class="add-cart"></i> -->
 
 			</div>
 
@@ -116,7 +123,8 @@
 				<img src="van.jpg" class="product-img">
 				<h2 class="product-list" >Vanila Cake</h2>
 				<span class="price">Price:500</span>
-				<i class='bx bx-shopping-bag' class="add-cart"></i>
+        <button id="btn-bir" onclick="alert('Your Order is Confirmed')">order</button>
+				<!-- <i class='bx bx-shopping-bag' class="add-cart"></i> -->
 
 			</div>
 		</div>
@@ -132,7 +140,8 @@
           <div class="footer-logo">
             <a class="footer-logo-link" href="#">
               <span class="hidden-link-text">LOGO</span>
-              <h1>LOGO</h1>
+              <!-- <h1>LOGO</h1> -->
+              <img src="images.jpg">
             </a>
           </div>
           <div class="footer-menu">
@@ -252,6 +261,7 @@
     </footer>
   </div>
 	<script type="main.js"></script>
+ 
 
 </body>
 </html>
